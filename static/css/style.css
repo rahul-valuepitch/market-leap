@@ -1536,6 +1536,23 @@
   color: var(--primary);
   line-height: 130%;
 }
+.service-detail .detail-card {
+  padding: 3px;
+  text-align: center;
+  background: linear-gradient(to top right, var(--primary), var(--secondary));
+}
+.service-detail .detail-card .card-body {
+  padding: 30px !important;
+  background: var(--light);
+  border-radius: 5px;
+}
+.service-detail .detail-card h6 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 30px;
+  color: var(--dark);
+}
 
 /* Responsive */
 @media (max-width: 1400px) {
