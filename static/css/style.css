@@ -1115,17 +1115,23 @@
 }
 .faq .card .card-body {
   padding: 30px;
+  align-items: flex-start;
 }
 .faq .card h5 {
   font-size: 40px;
   font-weight: 800;
   color: var(--light);
   margin-bottom: 10px;
+  text-align: left;
 }
 .faq .card h6 {
   font-size: 18px;
   font-weight: 600;
   color: var(--light);
+  text-align: left;
+}
+.faq .card p {
+  text-align: left;
 }
 .faq .faq-card {
   border: 0;
@@ -1151,7 +1157,7 @@
   margin-bottom: 30px;
 }
 .faq .faq-card .accordion .accordion-button {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 800;
   color: var(--dark);
 }
