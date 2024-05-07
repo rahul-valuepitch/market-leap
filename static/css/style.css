@@ -384,6 +384,13 @@
   height: 160px;
   border-radius: 100%;
 }
+.about-page .list span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark-alt);
+  line-height: 160%;
+  letter-spacing: 0.5px;
+}
 
 /* Projects Section */
 .projects {
