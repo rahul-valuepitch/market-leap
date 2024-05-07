@@ -402,13 +402,13 @@
   position: relative;
   z-index: 1;
 }
-.projects .box {
+.project-card {
   position: relative;
   height: 500px;
   border-radius: 20px;
   overflow: hidden;
 }
-.projects .box .text {
+.project-card .text {
   position: absolute;
   z-index: 1;
   bottom: 30px;
@@ -420,12 +420,12 @@
   transition: 0.5s ease all;
   opacity: 0;
 }
-.projects .owl-item.center .box .text,
-.projects .box:hover .text {
+.projects .owl-item.center .project-card .text,
+.project-card:hover .text {
   opacity: 1;
   width: calc(100% - 60px);
 }
-.projects .box .text h5 {
+.project-card .text h5 {
   font-size: 25px;
   font-weight: 600;
   color: var(--dark);
@@ -435,7 +435,7 @@
   opacity: 0;
   transition: 0.5s ease all;
 }
-.projects .box .text h6 {
+.project-card .text h6 {
   font-size: 18px;
   font-weight: 600;
   color: var(--secondary);
@@ -446,19 +446,19 @@
   opacity: 0;
   transition: 0.5s ease all;
 }
-.projects .owl-item.center .box .text h5,
-.projects .box:hover .text h5,
-.projects .owl-item.center .box .text h6,
-.projects .box:hover .text h6 {
+.projects .owl-item.center .project-card .text h5,
+.project-card:hover .text h5,
+.projects .owl-item.center .project-card .text h6,
+.project-card:hover .text h6 {
   opacity: 1;
 }
-.projects .box .image {
+.project-card .image {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-.projects .box .image::after {
+.project-card .image::after {
   content: "";
   position: absolute;
   top: 0;
@@ -467,14 +467,14 @@
   height: 100%;
   background: linear-gradient(to top, #0e191ea6, transparent);
 }
-.projects .box .image img {
+.project-card .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   transition: 0.5s ease all;
 }
-.projects .box:hover .image img {
+.project-card:hover .image img {
   transform: scale(1.1);
 }
 .projects #projects-carousel .owl-nav {
@@ -1555,6 +1555,31 @@
   color: var(--dark);
 }
 
+/* About Page */
+.about-page .sticky {
+  position: sticky;
+  top: 50px;
+}
+.about-page .image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.about-page .years h6 {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 130%;
+}
+.about-page .years h5 {
+  font-size: 100px;
+  font-weight: 800;
+  background: linear-gradient(to top right, #ff4c00, #ffc1a6);
+  background-clip: text;
+  color: transparent;
+  line-height: 100%;
+}
+
 /* Responsive */
 @media (max-width: 1400px) {
 }
@@ -1594,12 +1619,12 @@
     font-size: 40px;
   }
   p,
-  .projects .box .text h6,
+  .project-card .text h6,
   .list li span {
     font-size: 16px;
   }
   .features .box .text h5,
-  .projects .box .text h5,
+  .project-card .text h5,
   .ideas .card .text h5,
   .choose .accordion .accordion-button,
   .blog-card h6 a,
@@ -1618,7 +1643,7 @@
     height: 50px;
     line-height: 50px;
   }
-  .projects .box .text {
+  .project-card .text {
     padding: 20px;
   }
   .ideas .card .card-footer {
