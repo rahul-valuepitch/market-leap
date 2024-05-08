@@ -957,6 +957,7 @@
   display: block;
   margin-top: 10px;
   transition: 0.5s ease all;
+  display: none;
 }
 .points-carousel .carousel .carousel-indicators button.active i {
   color: var(--secondary);
@@ -1678,6 +1679,10 @@
   height: 3px;
   background: var(--secondary);
   border-radius: 0 0 3px 3px;
+  transition: 0.5s ease all;
+}
+.teams .card:hover::after {
+  width: 100%;
 }
 .teams .card .image {
   width: 150px;
@@ -1711,6 +1716,11 @@
 @media (max-width: 1400px) {
 }
 @media (max-width: 1300px) {
+  .project-card .text h5 {
+    font-size: 20px;
+    text-wrap: wrap;
+    line-break: auto;
+  }
 }
 @media (max-width: 1200px) {
   .header .logo {
