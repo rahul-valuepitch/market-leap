@@ -247,4 +247,5 @@ p b {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
+  -moz-appearance: textfield;
 }
