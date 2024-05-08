@@ -1617,6 +1617,20 @@
   filter: invert(-1);
 }
 
+/* Clients */
+.client-page .list li span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark-alt);
+  line-height: 140%;
+}
+.client-page .list li b {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 140%;
+}
+
 /* Responsive */
 @media (max-width: 1400px) {
 }
