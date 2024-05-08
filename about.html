@@ -253,7 +253,7 @@
       </div>
     </section>
 
-    <section class="section about-page pt-5">
+    <section class="section about-page pt-5" id="about-year">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6">
@@ -312,7 +312,7 @@
                 <img src="./static/images/services/marketing.jpg" alt="" />
               </div>
               <div class="years mt-5" data-aos="fade-up" data-aos-delay="400">
-                <h5>15+</h5>
+                <h5><span data-count="15" class="count">0</span>+</h5>
                 <h6>Years Of Experience</h6>
               </div>
             </div>
@@ -586,5 +586,9 @@
     <script src="./static/js/owl.carousel.min.js"></script>
     <script src="./static/js/bootstrap.bundle.min.js"></script>
     <script src="./static/js/app.js"></script>
+    <script>
+      // Counter
+      counter("#about-year");
+    </script>
   </body>
 </html>
