@@ -17,6 +17,33 @@ const projectList = [
     img: "./static/images/projects/adv/crimescan.jpg",
     link: "https://crimescan.ai/",
   },
+  {
+    id: 3,
+    filter: "design-services",
+    name: "Design Services",
+    title: "BNI",
+    heading: "Design Services",
+    img: "./static/images/projects/design-ser/bni.jpg",
+    link: "https://www.instagram.com/bni_tirupati_achievers/",
+  },
+  {
+    id: 4,
+    filter: "digital-marketing",
+    name: "Digital Marketing",
+    title: "RiloxEV",
+    heading: "Paid Advertising/Lead Generation",
+    img: "./static/images/projects/digital-marketing/rilox.jpg",
+    link: "https://www.linkedin.com/company/rilox-ev/posts/?feedView=all",
+  },
+  {
+    id: 5,
+    filter: "digital-marketing",
+    name: "Digital Marketing",
+    title: "B2BTesters",
+    heading: "Social Media Management",
+    img: "./static/images/projects/digital-marketing/b2b.jpg",
+    link: "https://www.linkedin.com/company/b2btesters/?viewAsMember=true",
+  },
 ];
 
 // Filter List

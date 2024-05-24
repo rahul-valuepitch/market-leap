@@ -452,6 +452,11 @@
   line-break: strict;
   opacity: 0;
   transition: 0.5s ease all;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .project-card .text h6 {
   font-size: 18px;
@@ -463,6 +468,11 @@
   line-break: strict;
   opacity: 0;
   transition: 0.5s ease all;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .projects .owl-item.center .project-card .text h5,
 .project-card:hover .text h5,
