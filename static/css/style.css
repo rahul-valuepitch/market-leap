@@ -422,7 +422,6 @@
 }
 .project-card {
   position: relative;
-  height: 500px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -519,6 +518,27 @@
   outline: 0;
   color: var(--light);
   pointer-events: all;
+}
+.project-page .filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.project-page .filter .filter-btn {
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  border: 0;
+  color: var(--light);
+  border-radius: 50px;
+  background: var(--primary);
+  transition: 0.5s ease all;
+  font-size: 16px;
+  font-weight: 600;
+}
+.project-page .filter .filter-btn.active {
+  background: var(--secondary);
 }
 
 /* Ideas Section */
@@ -870,7 +890,7 @@
   height: 100%;
 }
 .choose .image img:nth-child(1) {
-  width: 60%;
+  width: 50%;
   position: absolute;
   top: 0;
   right: 0;
@@ -880,7 +900,7 @@
   border-radius: 20px;
 }
 .choose .image img:nth-child(2) {
-  width: 70%;
+  width: 80%;
   top: 50px;
   height: calc(100% - 50px);
   position: relative;
