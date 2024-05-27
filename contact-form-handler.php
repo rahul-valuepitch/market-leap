@@ -9,13 +9,13 @@ try {
     $mail1->SMTPDebug = 0;
     $mail1->Host = 'smtp.gmail.com';
     $mail1->SMTPAuth = true;
-    $mail1->Username = 'rahul.yadav@valuepitch.com';
-    $mail1->Password = "Admin123";
+    $mail1->Username = '';
+    $mail1->Password = "";
     $mail1->SMTPSecure = 'ssl';
     $mail1->Port = 465;
 
-    $mail1->setFrom('rahul.yadav@valuepitch.com', 'Enquiry from Market Leap');
-    $mail1->addAddress('rahul.yadav@valuepitch.com', 'Enquiry from Market Leap');
+    $mail1->setFrom('', 'Enquiry from Market Leap');
+    $mail1->addAddress('', 'Enquiry from Market Leap');
 
     $name = trim($_POST['name']);
     $phone = trim($_POST['phone']);
@@ -25,7 +25,7 @@ try {
 
     $mail1->isHTML(true);
 
-    $mail1->AddBCC("");
+    // $mail1->AddBCC("");
 
 
     $mail1->Subject = 'Market Leap Contact Form';
@@ -101,7 +101,7 @@ try {
             var_dump($captcha);
 
         } else {
-            if (isset($_POST['firstName']) && $firstName != "") {
+            if (isset($_POST['phone']) && $phone != "") {
                 $mail1->send();
                 print "<script>window.location = \"success.html\"</script>";
                 exit();
