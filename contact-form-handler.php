@@ -9,13 +9,13 @@ try {
     $mail1->SMTPDebug = 0;
     $mail1->Host = 'smtp.gmail.com';
     $mail1->SMTPAuth = true;
-    $mail1->Username = '';
-    $mail1->Password = "";
+    $mail1->Username = 'rahul.yadav@valuepitch.com';
+    $mail1->Password = "Admin123";
     $mail1->SMTPSecure = 'ssl';
     $mail1->Port = 465;
 
-    $mail1->setFrom('', 'Enquiry from Market Leap');
-    $mail1->addAddress('', 'Enquiry from Market Leap');
+    $mail1->setFrom('rahul.yadav@valuepitch.com', 'Enquiry from Market Leap');
+    $mail1->addAddress('info@marketleap.com', 'Enquiry from Market Leap');
 
     $name = trim($_POST['name']);
     $phone = trim($_POST['phone']);
@@ -25,8 +25,7 @@ try {
 
     $mail1->isHTML(true);
 
-    // $mail1->AddBCC("");
-
+    $mail1->AddBCC("intesab@marketleap.in");
 
     $mail1->Subject = 'Market Leap Contact Form';
     $message_data   = "Enquiry By: " . $name .
